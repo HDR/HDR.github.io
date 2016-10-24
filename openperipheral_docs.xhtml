@@ -44,7 +44,7 @@ body {
 <strong>This documentation is specific to your mods.</strong> It is not complete - it will grow every time you attach new peripheral or call method with previously unseen type.</p>
 <p>If it seems empty, try using peripheral.wrap() on a few things and running some code (any code) on the terminal glasses. This will generate more peripherals for you to use.</p>
 <p>
-<small>Generated in OpenPeripheralCore 1.3 by The_HDR on 2016-10-24 12:42:45 +0200</small>
+<small>Generated in OpenPeripheralCore 1.3 by The_HDR on 2016-10-24 12:46:36 +0200</small>
 </p>
 <h2>Table of Contents:</h2>
 <h3>External adapters:</h3>
@@ -293,6 +293,18 @@ body {
 <a href="#adapt.openperipheral.integration.vanilla.AdapterMobSpawner">vanilla_spawner</a>
 </li>
 </ul>
+<h3>Generated types for: ComputerCraft</h3>
+<h4>Peripherals:</h4>
+<ul>
+<li>
+<a href="#periph.ComputerCraft.powercrystals.minefactoryreloaded.tile.machine.TileEntityLaserDrill">laser_drill</a>
+</li>
+<li>
+<a href="#periph.ComputerCraft.powercrystals.minefactoryreloaded.tile.machine.TileEntityLaserDrillPrecharger">laser_drill_precharger</a>
+</li>
+</ul>
+<h4>Objects:</h4>
+<ul/>
 <h2>Documentation:</h2>
 <h3>Adapters:</h3>
 <div class="major" id="adapt.openblocks.integration.AdapterProjector">
@@ -4326,6 +4338,622 @@ body {
 </div>
 </div>
 <h3>Peripherals:</h3>
+<div class="major" id="periph.ComputerCraft.powercrystals.minefactoryreloaded.tile.machine.TileEntityLaserDrill">
+<h1>laser_drill</h1>
+<p>A peripheral of type <code>laser_drill</code>
+</p>
+<p>TileEntity id: <code>factoryLaserDrill</code>
+</p>
+<p>Architecture: ComputerCraft</p>
+<p>Generated for class <code>powercrystals.minefactoryreloaded.tile.machine.TileEntityLaserDrill</code>
+</p>
+<div class="method">
+<h2>
+<code>condenseItems()</code>
+</h2>
+<p>
+<strong>Synchronized</strong>
+</p>
+<p>Condense and tidy the stacks in an inventory</p>
+<p>Source: inventory</p>
+</div>
+<div class="method">
+<h2>
+<code>destroyStack(slotNumber)</code>
+</h2>
+<p>
+<strong>Synchronized</strong>
+</p>
+<p>Destroy a stack</p>
+<p>Source: inventory</p>
+<p>Arguments:</p>
+<div class="arguments">
+<p>
+<code>slotNumber</code>
+            (number)
+             : The slot number</p>
+</div>
+</div>
+<div class="method">
+<h2>
+<code>doc(method) : string</code>
+</h2>
+<p>Brief description of method</p>
+<p>Source: &lt;meta&gt;</p>
+<p>Arguments:</p>
+<div class="arguments">
+<p>
+<code>method</code>
+            (string)
+             </p>
+</div>
+</div>
+<div class="method">
+<h2>
+<code>expandStack(stack) : table</code>
+</h2>
+<p>Get full stack information from id and/or damage</p>
+<p>Source: inventory</p>
+<p>Arguments:</p>
+<div class="arguments">
+<p>
+<code>stack</code>
+            ({id:string,dmg:number?,qty:number?,...})
+             </p>
+</div>
+</div>
+<div class="method">
+<h2>
+<code>getAdvancedMethodsData(method?) : table</code>
+</h2>
+<p>Get a complete table of information about all available methods</p>
+<p>Source: &lt;meta&gt;</p>
+<p>Arguments:</p>
+<div class="arguments">
+<p>
+<code>method</code>
+            (optional string)
+             </p>
+</div>
+</div>
+<div class="method">
+<h2>
+<code>getAllStacks(proxy?) : table</code>
+</h2>
+<p>Get a table with all the items of the chest</p>
+<p>Source: inventory</p>
+<p>Arguments:</p>
+<div class="arguments">
+<p>
+<code>proxy</code>
+            (optional boolean)
+             : If false, method will compute whole table, instead of returning proxy</p>
+</div>
+</div>
+<div class="method">
+<h2>
+<code>getInventoryName() : string</code>
+</h2>
+<p>Get the name of this inventory</p>
+<p>Source: inventory</p>
+</div>
+<div class="method">
+<h2>
+<code>getInventorySize() : number</code>
+</h2>
+<p>Get the size of this inventory</p>
+<p>Source: inventory</p>
+</div>
+<div class="method">
+<h2>
+<code>getStackInSlot(slotNumber,proxy?) : object</code>
+</h2>
+<p>Get details of an item in a particular slot</p>
+<p>Source: inventory</p>
+<p>Arguments:</p>
+<div class="arguments">
+<p>
+<code>slotNumber</code>
+            (number)
+             : Slot number</p>
+<p>
+<code>proxy</code>
+            (optional boolean)
+             : If true, method will return proxy instead of computing whole table</p>
+</div>
+</div>
+<div class="method">
+<h2>
+<code>listMethods(filterSource?) : string</code>
+</h2>
+<p>List all the methods available</p>
+<p>Source: &lt;meta&gt;</p>
+<p>Arguments:</p>
+<div class="arguments">
+<p>
+<code>filterSource</code>
+            (optional string)
+             </p>
+</div>
+</div>
+<div class="method">
+<h2>
+<code>listSources() : table</code>
+</h2>
+<p>List all method sources</p>
+<p>Source: &lt;meta&gt;</p>
+</div>
+<div class="method">
+<h2>
+<code>pullItem(direction,slot,maxAmount?,intoSlot?) : number</code>
+</h2>
+<p>
+<strong>Synchronized</strong>
+</p>
+<p>Pull an item from a slot in another inventory into a slot in this one. Returns the amount of items moved</p>
+<p>Source: inventory-world</p>
+<p>Arguments:</p>
+<div class="arguments">
+<p>
+<code>direction</code>
+            (string{DOWN,UP,NORTH,SOUTH,WEST,EAST,UNKNOWN})
+             : The direction of the other inventory</p>
+<p>
+<code>slot</code>
+            (number)
+             : The slot in the OTHER inventory that you're pulling from</p>
+<p>
+<code>maxAmount</code>
+            (optional number)
+             : The maximum amount of items you want to pull</p>
+<p>
+<code>intoSlot</code>
+            (optional number)
+             : The slot in the current inventory that you want to pull into</p>
+</div>
+</div>
+<div class="method">
+<h2>
+<code>pullItemIntoSlot(direction,slot,maxAmount?,intoSlot?) : number</code>
+</h2>
+<p>
+<strong>Synchronized</strong>
+</p>
+<p>Pull an item from a slot in another inventory into a slot in this one. Returns the amount of items moved</p>
+<p>Source: inventory-world</p>
+<p>Arguments:</p>
+<div class="arguments">
+<p>
+<code>direction</code>
+            (string{DOWN,UP,NORTH,SOUTH,WEST,EAST,UNKNOWN})
+             : The direction of the other inventory</p>
+<p>
+<code>slot</code>
+            (number)
+             : The slot in the OTHER inventory that you're pulling from</p>
+<p>
+<code>maxAmount</code>
+            (optional number)
+             : The maximum amount of items you want to pull</p>
+<p>
+<code>intoSlot</code>
+            (optional number)
+             : The slot in the current inventory that you want to pull into</p>
+</div>
+</div>
+<div class="method">
+<h2>
+<code>pushItem(direction,slot,maxAmount?,intoSlot?) : number</code>
+</h2>
+<p>
+<strong>Synchronized</strong>
+</p>
+<p>Push an item from the current inventory into pipe or slot on the other inventory. Returns the amount of items moved</p>
+<p>Source: inventory-world</p>
+<p>Arguments:</p>
+<div class="arguments">
+<p>
+<code>direction</code>
+            (string{DOWN,UP,NORTH,SOUTH,WEST,EAST,UNKNOWN})
+             : The direction of the other inventory</p>
+<p>
+<code>slot</code>
+            (number)
+             : The slot in the current inventory that you're pushing from</p>
+<p>
+<code>maxAmount</code>
+            (optional number)
+             : The maximum amount of items you want to push</p>
+<p>
+<code>intoSlot</code>
+            (optional number)
+             : The slot in the other inventory that you want to push into (ignored when target is pipe</p>
+</div>
+</div>
+<div class="method">
+<h2>
+<code>pushItemIntoSlot(direction,slot,maxAmount?,intoSlot?) : number</code>
+</h2>
+<p>
+<strong>Synchronized</strong>
+</p>
+<p>Push an item from the current inventory into pipe or slot on the other inventory. Returns the amount of items moved</p>
+<p>Source: inventory-world</p>
+<p>Arguments:</p>
+<div class="arguments">
+<p>
+<code>direction</code>
+            (string{DOWN,UP,NORTH,SOUTH,WEST,EAST,UNKNOWN})
+             : The direction of the other inventory</p>
+<p>
+<code>slot</code>
+            (number)
+             : The slot in the current inventory that you're pushing from</p>
+<p>
+<code>maxAmount</code>
+            (optional number)
+             : The maximum amount of items you want to push</p>
+<p>
+<code>intoSlot</code>
+            (optional number)
+             : The slot in the other inventory that you want to push into (ignored when target is pipe</p>
+</div>
+</div>
+<div class="method">
+<h2>
+<code>swapStacks(from,to,fromDirection?,fromDirection?)</code>
+</h2>
+<p>
+<strong>Synchronized</strong>
+</p>
+<p>Swap two slots in the inventory</p>
+<p>Source: inventory</p>
+<p>Arguments:</p>
+<div class="arguments">
+<p>
+<code>from</code>
+            (number)
+             : The first slot</p>
+<p>
+<code>to</code>
+            (number)
+             : The other slot</p>
+<p>
+<code>fromDirection</code>
+            (optional string{DOWN,UP,NORTH,SOUTH,WEST,EAST,UNKNOWN})
+             </p>
+<p>
+<code>fromDirection</code>
+            (optional string{DOWN,UP,NORTH,SOUTH,WEST,EAST,UNKNOWN})
+             </p>
+</div>
+</div>
+</div>
+<div class="major" id="periph.ComputerCraft.powercrystals.minefactoryreloaded.tile.machine.TileEntityLaserDrillPrecharger">
+<h1>laser_drill_precharger</h1>
+<p>A peripheral of type <code>laser_drill_precharger</code>
+</p>
+<p>TileEntity id: <code>factoryLaserDrillPrecharger</code>
+</p>
+<p>Architecture: ComputerCraft</p>
+<p>Generated for class <code>powercrystals.minefactoryreloaded.tile.machine.TileEntityLaserDrillPrecharger</code>
+</p>
+<div class="method">
+<h2>
+<code>condenseItems()</code>
+</h2>
+<p>
+<strong>Synchronized</strong>
+</p>
+<p>Condense and tidy the stacks in an inventory</p>
+<p>Source: inventory</p>
+</div>
+<div class="method">
+<h2>
+<code>destroyStack(slotNumber)</code>
+</h2>
+<p>
+<strong>Synchronized</strong>
+</p>
+<p>Destroy a stack</p>
+<p>Source: inventory</p>
+<p>Arguments:</p>
+<div class="arguments">
+<p>
+<code>slotNumber</code>
+            (number)
+             : The slot number</p>
+</div>
+</div>
+<div class="method">
+<h2>
+<code>doc(method) : string</code>
+</h2>
+<p>Brief description of method</p>
+<p>Source: &lt;meta&gt;</p>
+<p>Arguments:</p>
+<div class="arguments">
+<p>
+<code>method</code>
+            (string)
+             </p>
+</div>
+</div>
+<div class="method">
+<h2>
+<code>expandStack(stack) : table</code>
+</h2>
+<p>Get full stack information from id and/or damage</p>
+<p>Source: inventory</p>
+<p>Arguments:</p>
+<div class="arguments">
+<p>
+<code>stack</code>
+            ({id:string,dmg:number?,qty:number?,...})
+             </p>
+</div>
+</div>
+<div class="method">
+<h2>
+<code>getAdvancedMethodsData(method?) : table</code>
+</h2>
+<p>Get a complete table of information about all available methods</p>
+<p>Source: &lt;meta&gt;</p>
+<p>Arguments:</p>
+<div class="arguments">
+<p>
+<code>method</code>
+            (optional string)
+             </p>
+</div>
+</div>
+<div class="method">
+<h2>
+<code>getAllStacks(proxy?) : table</code>
+</h2>
+<p>Get a table with all the items of the chest</p>
+<p>Source: inventory</p>
+<p>Arguments:</p>
+<div class="arguments">
+<p>
+<code>proxy</code>
+            (optional boolean)
+             : If false, method will compute whole table, instead of returning proxy</p>
+</div>
+</div>
+<div class="method">
+<h2>
+<code>getEnergyStored(side?) : number</code>
+</h2>
+<p>
+<strong>Synchronized</strong>
+</p>
+<p>Get the energy stored in the machine.</p>
+<p>Source: rf_receiver</p>
+<p>Arguments:</p>
+<div class="arguments">
+<p>
+<code>side</code>
+            (optional string{DOWN,UP,NORTH,SOUTH,WEST,EAST,UNKNOWN})
+             : The direction you are interested in. (north, south, east, west, up or down)</p>
+</div>
+</div>
+<div class="method">
+<h2>
+<code>getInventoryName() : string</code>
+</h2>
+<p>Get the name of this inventory</p>
+<p>Source: inventory</p>
+</div>
+<div class="method">
+<h2>
+<code>getInventorySize() : number</code>
+</h2>
+<p>Get the size of this inventory</p>
+<p>Source: inventory</p>
+</div>
+<div class="method">
+<h2>
+<code>getMaxEnergyStored(side?) : number</code>
+</h2>
+<p>
+<strong>Synchronized</strong>
+</p>
+<p>Get the max energy stored in the machine.</p>
+<p>Source: rf_receiver</p>
+<p>Arguments:</p>
+<div class="arguments">
+<p>
+<code>side</code>
+            (optional string{DOWN,UP,NORTH,SOUTH,WEST,EAST,UNKNOWN})
+             : The direction you are interested in. (north, south, east, west, up or down)</p>
+</div>
+</div>
+<div class="method">
+<h2>
+<code>getStackInSlot(slotNumber,proxy?) : object</code>
+</h2>
+<p>Get details of an item in a particular slot</p>
+<p>Source: inventory</p>
+<p>Arguments:</p>
+<div class="arguments">
+<p>
+<code>slotNumber</code>
+            (number)
+             : Slot number</p>
+<p>
+<code>proxy</code>
+            (optional boolean)
+             : If true, method will return proxy instead of computing whole table</p>
+</div>
+</div>
+<div class="method">
+<h2>
+<code>listMethods(filterSource?) : string</code>
+</h2>
+<p>List all the methods available</p>
+<p>Source: &lt;meta&gt;</p>
+<p>Arguments:</p>
+<div class="arguments">
+<p>
+<code>filterSource</code>
+            (optional string)
+             </p>
+</div>
+</div>
+<div class="method">
+<h2>
+<code>listSources() : table</code>
+</h2>
+<p>List all method sources</p>
+<p>Source: &lt;meta&gt;</p>
+</div>
+<div class="method">
+<h2>
+<code>pullItem(direction,slot,maxAmount?,intoSlot?) : number</code>
+</h2>
+<p>
+<strong>Synchronized</strong>
+</p>
+<p>Pull an item from a slot in another inventory into a slot in this one. Returns the amount of items moved</p>
+<p>Source: inventory-world</p>
+<p>Arguments:</p>
+<div class="arguments">
+<p>
+<code>direction</code>
+            (string{DOWN,UP,NORTH,SOUTH,WEST,EAST,UNKNOWN})
+             : The direction of the other inventory</p>
+<p>
+<code>slot</code>
+            (number)
+             : The slot in the OTHER inventory that you're pulling from</p>
+<p>
+<code>maxAmount</code>
+            (optional number)
+             : The maximum amount of items you want to pull</p>
+<p>
+<code>intoSlot</code>
+            (optional number)
+             : The slot in the current inventory that you want to pull into</p>
+</div>
+</div>
+<div class="method">
+<h2>
+<code>pullItemIntoSlot(direction,slot,maxAmount?,intoSlot?) : number</code>
+</h2>
+<p>
+<strong>Synchronized</strong>
+</p>
+<p>Pull an item from a slot in another inventory into a slot in this one. Returns the amount of items moved</p>
+<p>Source: inventory-world</p>
+<p>Arguments:</p>
+<div class="arguments">
+<p>
+<code>direction</code>
+            (string{DOWN,UP,NORTH,SOUTH,WEST,EAST,UNKNOWN})
+             : The direction of the other inventory</p>
+<p>
+<code>slot</code>
+            (number)
+             : The slot in the OTHER inventory that you're pulling from</p>
+<p>
+<code>maxAmount</code>
+            (optional number)
+             : The maximum amount of items you want to pull</p>
+<p>
+<code>intoSlot</code>
+            (optional number)
+             : The slot in the current inventory that you want to pull into</p>
+</div>
+</div>
+<div class="method">
+<h2>
+<code>pushItem(direction,slot,maxAmount?,intoSlot?) : number</code>
+</h2>
+<p>
+<strong>Synchronized</strong>
+</p>
+<p>Push an item from the current inventory into pipe or slot on the other inventory. Returns the amount of items moved</p>
+<p>Source: inventory-world</p>
+<p>Arguments:</p>
+<div class="arguments">
+<p>
+<code>direction</code>
+            (string{DOWN,UP,NORTH,SOUTH,WEST,EAST,UNKNOWN})
+             : The direction of the other inventory</p>
+<p>
+<code>slot</code>
+            (number)
+             : The slot in the current inventory that you're pushing from</p>
+<p>
+<code>maxAmount</code>
+            (optional number)
+             : The maximum amount of items you want to push</p>
+<p>
+<code>intoSlot</code>
+            (optional number)
+             : The slot in the other inventory that you want to push into (ignored when target is pipe</p>
+</div>
+</div>
+<div class="method">
+<h2>
+<code>pushItemIntoSlot(direction,slot,maxAmount?,intoSlot?) : number</code>
+</h2>
+<p>
+<strong>Synchronized</strong>
+</p>
+<p>Push an item from the current inventory into pipe or slot on the other inventory. Returns the amount of items moved</p>
+<p>Source: inventory-world</p>
+<p>Arguments:</p>
+<div class="arguments">
+<p>
+<code>direction</code>
+            (string{DOWN,UP,NORTH,SOUTH,WEST,EAST,UNKNOWN})
+             : The direction of the other inventory</p>
+<p>
+<code>slot</code>
+            (number)
+             : The slot in the current inventory that you're pushing from</p>
+<p>
+<code>maxAmount</code>
+            (optional number)
+             : The maximum amount of items you want to push</p>
+<p>
+<code>intoSlot</code>
+            (optional number)
+             : The slot in the other inventory that you want to push into (ignored when target is pipe</p>
+</div>
+</div>
+<div class="method">
+<h2>
+<code>swapStacks(from,to,fromDirection?,fromDirection?)</code>
+</h2>
+<p>
+<strong>Synchronized</strong>
+</p>
+<p>Swap two slots in the inventory</p>
+<p>Source: inventory</p>
+<p>Arguments:</p>
+<div class="arguments">
+<p>
+<code>from</code>
+            (number)
+             : The first slot</p>
+<p>
+<code>to</code>
+            (number)
+             : The other slot</p>
+<p>
+<code>fromDirection</code>
+            (optional string{DOWN,UP,NORTH,SOUTH,WEST,EAST,UNKNOWN})
+             </p>
+<p>
+<code>fromDirection</code>
+            (optional string{DOWN,UP,NORTH,SOUTH,WEST,EAST,UNKNOWN})
+             </p>
+</div>
+</div>
+</div>
 <h3>Scripting Objects:</h3>
 </body>
 </html>
