@@ -2,7 +2,7 @@ var APP_DATA = {
   "scenes": [
     {
       "id": "0-the-witcher-3-360-20161026---21145462",
-      "name": "The Witcher 3 360 2016.10.26 - 21.14.54.62",
+      "name": "The Witcher 3 Shot 1",
       "levels": [
         {
           "tileSize": 256,
@@ -33,7 +33,7 @@ var APP_DATA = {
     },
     {
       "id": "1-the-witcher-3-360-20161026---21154117",
-      "name": "The Witcher 3 360 2016.10.26 - 21.15.41.17",
+      "name": "The Witcher 3 Shot 2",
       "levels": [
         {
           "tileSize": 256,
@@ -64,7 +64,7 @@ var APP_DATA = {
     },
     {
       "id": "2-the-witcher-3-360-20161026---21161979",
-      "name": "The Witcher 3 360 2016.10.26 - 21.16.19.79",
+      "name": "The Witcher 3 Castle Shot",
       "levels": [
         {
           "tileSize": 256,
