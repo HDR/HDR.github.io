@@ -278,8 +278,8 @@ var APP_DATA = {
       },
       "linkHotspots": [],
       "infoHotspots": []
-    }
-        {
+    },
+    {
       "id": "0-the-witcher-3-360-20161207---01154676",
       "name": "Witcher 3 Corvo Bianco Night",
       "levels": [
