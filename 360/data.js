@@ -281,7 +281,7 @@ var APP_DATA = {
     }
         {
       "id": "0-the-witcher-3-360-20161207---01154676",
-      "name": "The Witcher 3 360 2016.12.07 - 01.15.46.76",
+      "name": "Witcher 3 Corvo Bianco Night",
       "levels": [
         {
           "tileSize": 256,
