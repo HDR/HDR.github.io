@@ -312,7 +312,7 @@ var APP_DATA = {
     },
 	{
       "id": "0-tom-clancys-ghost-recon--wildlands-360-20170225---00200638",
-      "name": "Tom Clancy's Ghost Recon  Wildlands 360 2017.02.25 - 00.20.06.38",
+      "name": "Tom Clancy's Ghost Recon  Wildland",
       "levels": [
         {
           "tileSize": 256,
