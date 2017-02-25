@@ -310,7 +310,7 @@ var APP_DATA = {
       "linkHotspots": [],
       "infoHotspots": []
     },
-	{
+    {
       "id": "0-tom-clancys-ghost-recon--wildlands-360-20170225---00200638",
       "name": "Tom Clancy's Ghost Recon  Wildland",
       "levels": [
