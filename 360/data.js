@@ -342,7 +342,7 @@ var APP_DATA = {
       "infoHotspots": []
     }
   ],
-  "name": "Witcher 3",
+  "name": "360 Ansel Shots",
   "settings": {
     "mouseViewMode": "drag",
     "autorotateEnabled": false,
