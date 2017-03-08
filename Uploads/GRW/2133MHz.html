@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Benchmark result</title>
+  <style>
+   * {
+    margin: 0;
+    padding: 0;
+   }
+   body {
+    background: url("background.png") no-repeat fixed center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Arial;
+    font-size: 1vw;
+    padding:0;
+    margin:0;
+   }
+   b{
+    font-weight:bold;
+   }
+   .headline{
+    padding-top:0.75vw;
+    padding-left:0.5vw;
+    font-size: 1vw;
+    text-align:left;
+    margin: 0; 
+   }
+   .spec h2 {
+    font-size: 1.3vw;
+   }
+   .stats {
+    background-color:rgba(102, 102, 102, 0.2);
+   }
+   .main{
+   }
+   #specs{
+    background-color:rgba(102, 102, 102, 0.25);
+   }
+   .yellow{
+    background-color: #FDB813;
+   }
+   .main_left{
+    background-color:rgba(102, 102, 102, 0.25);
+   }
+   #pagewrap {
+    margin-left: 1%;
+    margin-right: 1%;
+   }
+   header {
+    height: 7vw;
+    margin-bottom: -3.5vw;
+    margin-top: 1vw;
+   }
+   .logo img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 4.5vw;
+   }
+   .yellow{
+    height: 2vw;
+    width: 100%;
+    float: left;
+   }
+   .yellow2 {
+    float: right;
+    z-index:5;
+   }
+   .main{
+    display: table;
+    width: 100%;
+   }
+   .main_row{
+    width: 100%;
+    display: table-row;
+    height:63vw;
+   }
+   .main_cell1{
+    width: 74.9%;
+    display: table-cell;
+    height:100%;
+   }
+   .main_cell2 {
+    width: 23.9%;
+    display: table-cell;
+    height:100%;
+    padding:0;
+    vertical-align:top;
+   }
+   .main_left{
+    width: 100%;
+    float: left;
+    height:100%;
+    display: table;
+   }
+   .stats {
+    width: 18%;
+    float: left;
+    height:100%;
+    display: table-column;
+   }
+   .graphs {
+    width: 79%;
+    float: left;
+    margin: 0.5%;
+    display: table-column;
+   }
+   .stat, .graph{
+    float: left;
+    display: table-cell;
+    width: 100%;
+   }
+   .frame, .temp, .cpubusy, .gpubusy, .membusy{
+    display: table-row;
+    width:auto;
+    clear:both;
+   }
+   .stat{
+    height: 100%;
+    position: relative; 
+    left: 0.2vw;
+   }
+   .stat table{
+    z-index:3;
+    height: 100%;
+    width: 100%;
+   }
+   .stat table tr {
+    height: 33%;
+   }
+   #specs {
+    float: right;
+    height: 63vw;
+    width: 99%;
+    font-size: 0.8vw;
+   }
+   .spec {
+    padding: 10% 0.3%;
+    width:100%;
+    position: relative; 
+    left: 0.2vw;
+   }
+   footer {
+    clear: both;
+   }
+   footer {
+    height: 5vw;
+   }
+   #pagewrap, header, #stats, #graphs, #specs, footer, .main, .main_left {
+    border: solid 0px black;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+   }
+  </style>
+  <meta name="description" content="Benchmark result" />
+ </head>
+ <body>
+  <div id="pagewrap">
+   <header>
+   </header>
+    <div class="main">
+     <div class="main_row">
+      <div class="main_cell1">
+       <div class="main_left">
+        <div class="yellow"><h2 class="headline"><b>BENCHMARK STATISTICS 07/03/2017 18:35:16</b></h2></div>
+        <div class="frame">
+         <div class="stats">
+          <div class="stat">
+           <table>
+           <tr> <td>&nbsp;</td></tr>
+           <tr>
+            <td>
+             <b>FPS:</b><br/>
+             <b>Average:</b> 79.48<br/>
+             <b>Min:</b> 67.86<br/>
+             <b>Max:</b> 90.28<br/>
+            </td>
+           </tr>
+           <tr> <td>&nbsp;</td></tr>
+           </table>
+          </div>
+         </div>
+         <div class="graphs">
+          <div class="graph">
+           <svg viewBox="0 0 9000 3000" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+             <linearGradient id="GradientColor" x1="0.0" y1="1.0" x2="0.0" y2="0.0">
+              <stop offset="0.2" stop-color="#cf3b3b" stop-opacity="0.9" />
+              <stop offset="0.6" stop-color="#92e410" stop-opacity="0.9" />
+             </linearGradient> 
+            </defs>
+            <g stroke="black" stroke-width="0" fill="#FFFFFF" shape-rendering="crispEdges" opacity="0">
+             <rect class="graphWhiteRectangleNode" x="0" y="0" width="9000" height="3000" />
+            </g>
+            <g id="traceFillGroupNode" stroke="#CF3B3B" fill="url(#GradientColor)" stroke-width="0">
+             <path d=" M 400.000 699.980 554.545 716.474 709.091 543.534 863.636 532.269 1018.182 790.951 1172.727 643.098 1327.273 628.177 1481.818 528.572 1636.364 566.099 1790.909 529.615 1945.455 453.604 2100.000 381.526 2254.545 422.896 2409.091 440.799 2563.636 456.618 2718.182 507.200 2872.727 536.788 3027.273 564.243 3181.818 549.783 3336.364 370.587 3490.909 388.460 3645.455 305.368 3800.000 296.017 3954.545 254.322 4109.091 234.892 4263.637 251.273 4418.182 266.251 4572.728 201.512 4727.273 242.734 4881.818 346.260 5036.364 432.510 5190.909 506.321 5345.455 538.313 5500.000 549.484 5654.545 465.016 5809.091 449.722 5963.636 493.082 6118.182 534.251 6272.728 539.369 6427.273 572.073 6581.818 594.004 6736.364 641.407 6890.909 770.349 7045.455 584.033 7200.000 466.931 7354.545 493.720 7509.091 408.989 7663.636 495.751 7818.182 501.377 7972.728 640.143 8127.273 652.965 8281.818 638.928 8436.363 596.371 8590.909 598.256 8745.455 645.490 8900.000 677.839 8900.000 2650.000 400.000 2650.000 z " fill="url(#GradientColor)" />
+            </g>
+            <g id="traceGroupNode" stroke="000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" fill="url(#GradientColor)">
+             <path d=" M 400.000 699.980 554.545 716.474 709.091 543.534 863.636 532.269 1018.182 790.951 1172.727 643.098 1327.273 628.177 1481.818 528.572 1636.364 566.099 1790.909 529.615 1945.455 453.604 2100.000 381.526 2254.545 422.896 2409.091 440.799 2563.636 456.618 2718.182 507.200 2872.727 536.788 3027.273 564.243 3181.818 549.783 3336.364 370.587 3490.909 388.460 3645.455 305.368 3800.000 296.017 3954.545 254.322 4109.091 234.892 4263.637 251.273 4418.182 266.251 4572.728 201.512 4727.273 242.734 4881.818 346.260 5036.364 432.510 5190.909 506.321 5345.455 538.313 5500.000 549.484 5654.545 465.016 5809.091 449.722 5963.636 493.082 6118.182 534.251 6272.728 539.369 6427.273 572.073 6581.818 594.004 6736.364 641.407 6890.909 770.349 7045.455 584.033 7200.000 466.931 7354.545 493.720 7509.091 408.989 7663.636 495.751 7818.182 501.377 7972.728 640.143 8127.273 652.965 8281.818 638.928 8436.363 596.371 8590.909 598.256 8745.455 645.490 8900.000 677.839 8900.000 2650.000 400.000 2650.000 z " stroke="#cf3b3b" stroke-width="0.01" />
+            </g>
+            <path id="xGridLinesPathNode" fill="none" stroke="#C0C0FF" stroke-width="5" d=" M 400.000 200.000 L 400.000 2650.000 M 3490.909 200.000 L 3490.909 2650.000 M 6581.818 200.000 L 6581.818 2650.000 " />
+            <path id="xAxisPinsPathNode" fill="none" stroke="#000000" stroke-width="7" d=" M 400.000 2650.000 L 400.000 2700.000 M 3490.909 2650.000 L 3490.909 2700.000 M 6581.818 2650.000 L 6581.818 2700.000 M 400.000 200.000 L 400.000 2650.000 M 8900.000 200.000 L 8900.000 2650.000 " />
+            <g id="xAxisNumbersGroupNode" font-family="Times New Roman" font-size="80" text-anchor="middle">
+             <text x="400.000" y="2780.000">0</text>
+             <text x="3490.909" y="2780.000">20</text>
+             <text x="6581.818" y="2780.000">40</text>
+            </g>
+            <path id="yGridLinesPathNode" fill="none" stroke="#C0C0FF" stroke-width="5" d=" M 400.000 2650.000 L 8900.000 2650.000 M 400.000 2378.615 L 8900.000 2378.615 M 400.000 2107.231 L 8900.000 2107.231 M 400.000 1835.846 L 8900.000 1835.846 M 400.000 1564.462 L 8900.000 1564.462 M 400.000 1293.077 L 8900.000 1293.077 M 400.000 1021.692 L 8900.000 1021.692 M 400.000 750.308 L 8900.000 750.308 M 400.000 478.923 L 8900.000 478.923 M 400.000 207.539 L 8900.000 207.539 " />
+            <path id="yAxisPinsPathNode" fill="none" stroke="#000000" stroke-width="7" d=" M 400.000 2650.000 L 350.000 2650.000 M 400.000 2378.615 L 350.000 2378.615 M 400.000 2107.231 L 350.000 2107.231 M 400.000 1835.846 L 350.000 1835.846 M 400.000 1564.462 L 350.000 1564.462 M 400.000 1293.077 L 350.000 1293.077 M 400.000 1021.692 L 350.000 1021.692 M 400.000 750.308 L 350.000 750.308 M 400.000 478.923 L 350.000 478.923 M 400.000 207.539 L 350.000 207.539 M 400.000 2650.000 L 8900.000 2650.000 " />
+            <g id="yAxisNumbersGroupNode" font-family="Times New Roman" font-size="80" text-anchor="end">
+             <text x="300.000" y="2650.000">0</text>
+             <text x="300.000" y="2378.615">10</text>
+             <text x="300.000" y="2107.231">20</text>
+             <text x="300.000" y="1835.846">30</text>
+             <text x="300.000" y="1564.462">40</text>
+             <text x="300.000" y="1293.077">50</text>
+             <text x="300.000" y="1021.692">60</text>
+             <text x="300.000" y="750.308">70</text>
+             <text x="300.000" y="478.923">80</text>
+             <text x="300.000" y="207.539">90</text>
+            </g>
+            <g fill="#000080" font-family="Arial" font-weight="bold" font-size="120" text-anchor="middle">
+             <text id="titleTextNode" x="4500.00" y="150.00" text-decoration="underline">Framerate</text>
+            </g>
+            <g fill="#000080" font-family="Arial" font-weight="bold" font-size="100" text-anchor="middle">
+             <text id="xAxisLabelTextNode" x="4500.00" y="2900.00" text-decoration="underline">Time(sec)</text>
+            </g>
+            <g fill="#000080" font-family="Arial" font-weight="bold" font-size="100" text-anchor="middle">
+             <text id="yAxisLabelTextNode" x="150.00" y="1500.00" text-decoration="underline" transform="rotate(-90,150.00,1500.00)">FPS</text>
+            </g>
+           </svg>
+          </div>
+         </div>
+        </div>
+        <div class="temp">
+         <div class="stats">
+          <div class="stat">
+           <table>
+           <tr> <td>&nbsp;</td></tr>
+           <tr>
+            <td>
+             <b>GPU</b> peak temp: 58<br/>
+            </td>
+           </tr>
+           <tr> <td>&nbsp;</td></tr>
+           </table>
+          </div>
+         </div>
+         <div class="graphs">
+          <div class="graph">
+           <svg viewBox="0 0 9000 3000" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+             <linearGradient id="GradientColor" x1="0.0" y1="1.0" x2="0.0" y2="0.0">
+              <stop offset="0.2" stop-color="#ffb909" stop-opacity="0.9" />
+              <stop offset="0.6" stop-color="#cf3b3b" stop-opacity="0.9" />
+             </linearGradient> 
+            </defs>
+            <g stroke="black" stroke-width="0" fill="#FFFFFF" shape-rendering="crispEdges" opacity="0">
+             <rect class="graphWhiteRectangleNode" x="0" y="0" width="9000" height="3000" />
+            </g>
+            <g id="traceFillGroupNode" stroke="#CF3B3B" fill="url(#GradientColor)" stroke-width="0">
+             <path d=" M 400.000 376.804 554.545 376.804 709.091 376.804 863.636 377.442 1018.182 352.433 1172.727 343.810 1327.273 334.708 1481.818 334.708 1636.364 334.708 1790.909 334.708 1945.455 334.708 2100.000 313.147 2254.545 292.612 2409.091 292.612 2563.636 292.612 2718.182 292.612 2872.727 292.612 3027.273 292.612 3181.818 291.609 3336.364 292.612 3490.909 281.354 3645.455 260.677 3800.000 260.561 3954.545 251.935 4109.091 250.516 4263.637 250.516 4418.182 250.516 4572.728 250.516 4727.273 250.516 4881.818 250.516 5036.364 250.516 5190.909 250.516 5345.455 250.516 5500.000 250.516 5654.545 250.516 5809.091 249.476 5963.636 243.408 6118.182 238.642 6272.728 222.634 6427.273 208.419 6581.818 208.419 6736.364 205.979 6890.909 200.000 7045.455 205.821 7200.000 208.419 7354.545 213.491 7509.091 209.485 7663.636 208.946 7818.182 208.419 7972.728 208.419 8127.273 208.419 8281.818 208.419 8436.363 208.419 8590.909 208.419 8745.455 208.419 8900.000 208.419 8900.000 2650.000 400.000 2650.000 z " fill="url(#GradientColor)" />
+            </g>
+            <g id="traceGroupNode" stroke="000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" fill="url(#GradientColor)">
+             <path d=" M 400.000 376.804 554.545 376.804 709.091 376.804 863.636 377.442 1018.182 352.433 1172.727 343.810 1327.273 334.708 1481.818 334.708 1636.364 334.708 1790.909 334.708 1945.455 334.708 2100.000 313.147 2254.545 292.612 2409.091 292.612 2563.636 292.612 2718.182 292.612 2872.727 292.612 3027.273 292.612 3181.818 291.609 3336.364 292.612 3490.909 281.354 3645.455 260.677 3800.000 260.561 3954.545 251.935 4109.091 250.516 4263.637 250.516 4418.182 250.516 4572.728 250.516 4727.273 250.516 4881.818 250.516 5036.364 250.516 5190.909 250.516 5345.455 250.516 5500.000 250.516 5654.545 250.516 5809.091 249.476 5963.636 243.408 6118.182 238.642 6272.728 222.634 6427.273 208.419 6581.818 208.419 6736.364 205.979 6890.909 200.000 7045.455 205.821 7200.000 208.419 7354.545 213.491 7509.091 209.485 7663.636 208.946 7818.182 208.419 7972.728 208.419 8127.273 208.419 8281.818 208.419 8436.363 208.419 8590.909 208.419 8745.455 208.419 8900.000 208.419 8900.000 2650.000 400.000 2650.000 z " stroke="#cf3b3b" stroke-width="0.01" />
+            </g>
+            <path id="xGridLinesPathNode" fill="none" stroke="#C0C0FF" stroke-width="5" d=" M 400.000 200.000 L 400.000 2650.000 M 3490.909 200.000 L 3490.909 2650.000 M 6581.818 200.000 L 6581.818 2650.000 " />
+            <path id="xAxisPinsPathNode" fill="none" stroke="#000000" stroke-width="7" d=" M 400.000 2650.000 L 400.000 2700.000 M 3490.909 2650.000 L 3490.909 2700.000 M 6581.818 2650.000 L 6581.818 2700.000 M 400.000 200.000 L 400.000 2650.000 M 8900.000 200.000 L 8900.000 2650.000 " />
+            <g id="xAxisNumbersGroupNode" font-family="Times New Roman" font-size="80" text-anchor="middle">
+             <text x="400.000" y="2780.000">0</text>
+             <text x="3490.909" y="2780.000">20</text>
+             <text x="6581.818" y="2780.000">40</text>
+            </g>
+            <path id="yGridLinesPathNode" fill="none" stroke="#C0C0FF" stroke-width="5" d=" M 400.000 2650.000 L 8900.000 2650.000 M 400.000 2229.038 L 8900.000 2229.038 M 400.000 1808.076 L 8900.000 1808.076 M 400.000 1387.114 L 8900.000 1387.114 M 400.000 966.151 L 8900.000 966.151 M 400.000 545.189 L 8900.000 545.189 " />
+            <path id="yAxisPinsPathNode" fill="none" stroke="#000000" stroke-width="7" d=" M 400.000 2650.000 L 350.000 2650.000 M 400.000 2229.038 L 350.000 2229.038 M 400.000 1808.076 L 350.000 1808.076 M 400.000 1387.114 L 350.000 1387.114 M 400.000 966.151 L 350.000 966.151 M 400.000 545.189 L 350.000 545.189 M 400.000 2650.000 L 8900.000 2650.000 " />
+            <g id="yAxisNumbersGroupNode" font-family="Times New Roman" font-size="80" text-anchor="end">
+             <text x="300.000" y="2650.000">0</text>
+             <text x="300.000" y="2229.038">10</text>
+             <text x="300.000" y="1808.076">20</text>
+             <text x="300.000" y="1387.114">30</text>
+             <text x="300.000" y="966.151">40</text>
+             <text x="300.000" y="545.189">50</text>
+            </g>
+            <g fill="#000080" font-family="Arial" font-weight="bold" font-size="120" text-anchor="middle">
+             <text id="titleTextNode" x="4500.00" y="150.00" text-decoration="underline">GPU Temperature</text>
+            </g>
+            <g fill="#000080" font-family="Arial" font-weight="bold" font-size="100" text-anchor="middle">
+             <text id="xAxisLabelTextNode" x="4500.00" y="2900.00" text-decoration="underline">Time(sec)</text>
+            </g>
+            <g fill="#000080" font-family="Arial" font-weight="bold" font-size="100" text-anchor="middle">
+             <text id="yAxisLabelTextNode" x="150.00" y="1500.00" text-decoration="underline" transform="rotate(-90,150.00,1500.00)">Temperature</text>
+            </g>
+           </svg>
+          </div>
+         </div>
+        </div>
+        <div class="cpubusy">
+         <div class="stats">
+          <div class="stat">
+           <table>
+           <tr> <td>&nbsp;</td></tr>
+           <tr>
+            <td>
+             <b>CPU usage:</b><br/>
+             <b>Average:</b> 59.0%<br/>
+             <b>Min:</b> 50.9%<br/>
+             <b>Max:</b> 70.5%<br/>
+            </td>
+           </tr>
+           <tr> <td>&nbsp;</td></tr>
+           </table>
+          </div>
+         </div>
+         <div class="graphs">
+          <div class="graph">
+           <svg viewBox="0 0 9000 3000" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+             <linearGradient id="GradientColor" x1="0.0" y1="1.0" x2="0.0" y2="0.0">
+              <stop offset="0.2" stop-color="#92e410" stop-opacity="0.9" />
+              <stop offset="0.6" stop-color="#cf3b3b" stop-opacity="0.9" />
+             </linearGradient> 
+            </defs>
+            <g stroke="black" stroke-width="0" fill="#FFFFFF" shape-rendering="crispEdges" opacity="0">
+             <rect class="graphWhiteRectangleNode" x="0" y="0" width="9000" height="3000" />
+            </g>
+            <g id="traceFillGroupNode" stroke="#CF3B3B" fill="url(#GradientColor)" stroke-width="0">
+             <path d=" M 400.000 810.594 554.545 389.587 709.091 605.253 863.636 312.253 1018.182 293.884 1172.727 623.716 1327.273 501.536 1481.818 519.889 1636.364 589.440 1790.909 391.032 1945.455 618.267 2100.000 340.843 2254.545 703.156 2409.091 664.684 2563.636 674.940 2718.182 585.539 2872.727 617.995 3027.273 572.839 3181.818 793.489 3336.364 729.479 3490.909 881.184 3645.455 330.344 3800.000 703.123 3954.545 745.471 4109.091 828.489 4263.637 491.871 4418.182 753.896 4572.728 812.729 4727.273 727.431 4881.818 573.299 5036.364 563.808 5190.909 555.906 5345.455 544.617 5500.000 578.832 5654.545 660.822 5809.091 718.341 5963.636 484.409 6118.182 676.683 6272.728 606.706 6427.273 602.696 6581.818 519.955 6736.364 691.046 6890.909 673.913 7045.455 541.272 7200.000 652.933 7354.545 753.666 7509.091 694.546 7663.636 650.733 7818.182 661.450 7972.728 731.863 8127.273 480.059 8281.818 596.160 8436.363 562.665 8590.909 200.000 8745.455 311.083 8900.000 639.867 8900.000 2650.000 400.000 2650.000 z " fill="url(#GradientColor)" />
+            </g>
+            <g id="traceGroupNode" stroke="000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" fill="url(#GradientColor)">
+             <path d=" M 400.000 810.594 554.545 389.587 709.091 605.253 863.636 312.253 1018.182 293.884 1172.727 623.716 1327.273 501.536 1481.818 519.889 1636.364 589.440 1790.909 391.032 1945.455 618.267 2100.000 340.843 2254.545 703.156 2409.091 664.684 2563.636 674.940 2718.182 585.539 2872.727 617.995 3027.273 572.839 3181.818 793.489 3336.364 729.479 3490.909 881.184 3645.455 330.344 3800.000 703.123 3954.545 745.471 4109.091 828.489 4263.637 491.871 4418.182 753.896 4572.728 812.729 4727.273 727.431 4881.818 573.299 5036.364 563.808 5190.909 555.906 5345.455 544.617 5500.000 578.832 5654.545 660.822 5809.091 718.341 5963.636 484.409 6118.182 676.683 6272.728 606.706 6427.273 602.696 6581.818 519.955 6736.364 691.046 6890.909 673.913 7045.455 541.272 7200.000 652.933 7354.545 753.666 7509.091 694.546 7663.636 650.733 7818.182 661.450 7972.728 731.863 8127.273 480.059 8281.818 596.160 8436.363 562.665 8590.909 200.000 8745.455 311.083 8900.000 639.867 8900.000 2650.000 400.000 2650.000 z " stroke="#cf3b3b" stroke-width="0.01" />
+            </g>
+            <path id="xGridLinesPathNode" fill="none" stroke="#C0C0FF" stroke-width="5" d=" M 400.000 200.000 L 400.000 2650.000 M 3490.909 200.000 L 3490.909 2650.000 M 6581.818 200.000 L 6581.818 2650.000 " />
+            <path id="xAxisPinsPathNode" fill="none" stroke="#000000" stroke-width="7" d=" M 400.000 2650.000 L 400.000 2700.000 M 3490.909 2650.000 L 3490.909 2700.000 M 6581.818 2650.000 L 6581.818 2700.000 M 400.000 200.000 L 400.000 2650.000 M 8900.000 200.000 L 8900.000 2650.000 " />
+            <g id="xAxisNumbersGroupNode" font-family="Times New Roman" font-size="80" text-anchor="middle">
+             <text x="400.000" y="2780.000">0</text>
+             <text x="3490.909" y="2780.000">20</text>
+             <text x="6581.818" y="2780.000">40</text>
+            </g>
+            <path id="yGridLinesPathNode" fill="none" stroke="#C0C0FF" stroke-width="5" d=" M 400.000 2650.000 L 8900.000 2650.000 M 400.000 2302.301 L 8900.000 2302.301 M 400.000 1954.603 L 8900.000 1954.603 M 400.000 1606.904 L 8900.000 1606.904 M 400.000 1259.205 L 8900.000 1259.205 M 400.000 911.507 L 8900.000 911.507 M 400.000 563.808 L 8900.000 563.808 M 400.000 216.110 L 8900.000 216.110 " />
+            <path id="yAxisPinsPathNode" fill="none" stroke="#000000" stroke-width="7" d=" M 400.000 2650.000 L 350.000 2650.000 M 400.000 2302.301 L 350.000 2302.301 M 400.000 1954.603 L 350.000 1954.603 M 400.000 1606.904 L 350.000 1606.904 M 400.000 1259.205 L 350.000 1259.205 M 400.000 911.507 L 350.000 911.507 M 400.000 563.808 L 350.000 563.808 M 400.000 216.110 L 350.000 216.110 M 400.000 2650.000 L 8900.000 2650.000 " />
+            <g id="yAxisNumbersGroupNode" font-family="Times New Roman" font-size="80" text-anchor="end">
+             <text x="300.000" y="2650.000">0</text>
+             <text x="300.000" y="2302.301">10</text>
+             <text x="300.000" y="1954.603">20</text>
+             <text x="300.000" y="1606.904">30</text>
+             <text x="300.000" y="1259.205">40</text>
+             <text x="300.000" y="911.507">50</text>
+             <text x="300.000" y="563.808">60</text>
+             <text x="300.000" y="216.110">70</text>
+            </g>
+            <g fill="#000080" font-family="Arial" font-weight="bold" font-size="120" text-anchor="middle">
+             <text id="titleTextNode" x="4500.00" y="150.00" text-decoration="underline">CPU Usage</text>
+            </g>
+            <g fill="#000080" font-family="Arial" font-weight="bold" font-size="100" text-anchor="middle">
+             <text id="xAxisLabelTextNode" x="4500.00" y="2900.00" text-decoration="underline">Time(sec)</text>
+            </g>
+            <g fill="#000080" font-family="Arial" font-weight="bold" font-size="100" text-anchor="middle">
+             <text id="yAxisLabelTextNode" x="150.00" y="1500.00" text-decoration="underline" transform="rotate(-90,150.00,1500.00)">CPU [%]</text>
+            </g>
+           </svg>
+          </div>
+         </div>
+        </div>
+        <div class="gpubusy">
+         <div class="stats">
+          <div class="stat">
+           <table>
+           <tr> <td>&nbsp;</td></tr>
+           <tr>
+            <td>
+             <b>GPU usage:</b><br/>
+             <b>Average:</b> 97.0%<br/>
+             <b>Min:</b> 91.6%<br/>
+             <b>Max:</b> 98.0%<br/>
+            </td>
+           </tr>
+           <tr> <td>&nbsp;</td></tr>
+           </table>
+          </div>
+         </div>
+         <div class="graphs">
+          <div class="graph">
+           <svg viewBox="0 0 9000 3000" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+             <linearGradient id="GradientColor" x1="0.0" y1="1.0" x2="0.0" y2="0.0">
+              <stop offset="0.2" stop-color="#92e410" stop-opacity="0.9" />
+              <stop offset="0.6" stop-color="#cf3b3b" stop-opacity="0.9" />
+             </linearGradient> 
+            </defs>
+            <g stroke="black" stroke-width="0" fill="#FFFFFF" shape-rendering="crispEdges" opacity="0">
+             <rect class="graphWhiteRectangleNode" x="0" y="0" width="9000" height="3000" />
+            </g>
+            <g id="traceFillGroupNode" stroke="#CF3B3B" fill="url(#GradientColor)" stroke-width="0">
+             <path d=" M 400.000 245.690 554.545 203.846 709.091 200.000 863.636 292.803 1018.182 294.079 1172.727 266.892 1327.273 211.218 1481.818 235.389 1636.364 200.000 1790.909 227.778 1945.455 239.157 2100.000 220.122 2254.545 214.025 2409.091 212.654 2563.636 217.405 2718.182 228.205 2872.727 249.675 3027.273 303.896 3181.818 210.417 3336.364 246.385 3490.909 200.000 3645.455 209.195 3800.000 252.273 3954.545 219.663 4109.091 222.191 4263.637 223.276 4418.182 204.121 4572.728 208.523 4727.273 200.000 4881.818 200.915 5036.364 203.125 5190.909 212.662 5345.455 200.000 5500.000 200.000 5654.545 208.750 5809.091 204.321 5963.636 200.000 6118.182 217.308 6272.728 200.000 6427.273 200.000 6581.818 213.513 6736.364 200.000 6890.909 211.667 7045.455 204.321 7200.000 224.684 7354.545 313.554 7509.091 360.126 7663.636 257.500 7818.182 236.986 7972.728 226.000 8127.273 200.000 8281.818 200.000 8436.363 200.000 8590.909 200.000 8745.455 200.000 8900.000 200.000 8900.000 2650.000 400.000 2650.000 z " fill="url(#GradientColor)" />
+            </g>
+            <g id="traceGroupNode" stroke="000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" fill="url(#GradientColor)">
+             <path d=" M 400.000 245.690 554.545 203.846 709.091 200.000 863.636 292.803 1018.182 294.079 1172.727 266.892 1327.273 211.218 1481.818 235.389 1636.364 200.000 1790.909 227.778 1945.455 239.157 2100.000 220.122 2254.545 214.025 2409.091 212.654 2563.636 217.405 2718.182 228.205 2872.727 249.675 3027.273 303.896 3181.818 210.417 3336.364 246.385 3490.909 200.000 3645.455 209.195 3800.000 252.273 3954.545 219.663 4109.091 222.191 4263.637 223.276 4418.182 204.121 4572.728 208.523 4727.273 200.000 4881.818 200.915 5036.364 203.125 5190.909 212.662 5345.455 200.000 5500.000 200.000 5654.545 208.750 5809.091 204.321 5963.636 200.000 6118.182 217.308 6272.728 200.000 6427.273 200.000 6581.818 213.513 6736.364 200.000 6890.909 211.667 7045.455 204.321 7200.000 224.684 7354.545 313.554 7509.091 360.126 7663.636 257.500 7818.182 236.986 7972.728 226.000 8127.273 200.000 8281.818 200.000 8436.363 200.000 8590.909 200.000 8745.455 200.000 8900.000 200.000 8900.000 2650.000 400.000 2650.000 z " stroke="#cf3b3b" stroke-width="0.01" />
+            </g>
+            <path id="xGridLinesPathNode" fill="none" stroke="#C0C0FF" stroke-width="5" d=" M 400.000 200.000 L 400.000 2650.000 M 3490.909 200.000 L 3490.909 2650.000 M 6581.818 200.000 L 6581.818 2650.000 " />
+            <path id="xAxisPinsPathNode" fill="none" stroke="#000000" stroke-width="7" d=" M 400.000 2650.000 L 400.000 2700.000 M 3490.909 2650.000 L 3490.909 2700.000 M 6581.818 2650.000 L 6581.818 2700.000 M 400.000 200.000 L 400.000 2650.000 M 8900.000 200.000 L 8900.000 2650.000 " />
+            <g id="xAxisNumbersGroupNode" font-family="Times New Roman" font-size="80" text-anchor="middle">
+             <text x="400.000" y="2780.000">0</text>
+             <text x="3490.909" y="2780.000">20</text>
+             <text x="6581.818" y="2780.000">40</text>
+            </g>
+            <path id="yGridLinesPathNode" fill="none" stroke="#C0C0FF" stroke-width="5" d=" M 400.000 2650.000 L 8900.000 2650.000 M 400.000 2400.000 L 8900.000 2400.000 M 400.000 2150.000 L 8900.000 2150.000 M 400.000 1900.000 L 8900.000 1900.000 M 400.000 1650.000 L 8900.000 1650.000 M 400.000 1400.000 L 8900.000 1400.000 M 400.000 1150.000 L 8900.000 1150.000 M 400.000 900.000 L 8900.000 900.000 M 400.000 650.000 L 8900.000 650.000 M 400.000 400.000 L 8900.000 400.000 " />
+            <path id="yAxisPinsPathNode" fill="none" stroke="#000000" stroke-width="7" d=" M 400.000 2650.000 L 350.000 2650.000 M 400.000 2400.000 L 350.000 2400.000 M 400.000 2150.000 L 350.000 2150.000 M 400.000 1900.000 L 350.000 1900.000 M 400.000 1650.000 L 350.000 1650.000 M 400.000 1400.000 L 350.000 1400.000 M 400.000 1150.000 L 350.000 1150.000 M 400.000 900.000 L 350.000 900.000 M 400.000 650.000 L 350.000 650.000 M 400.000 400.000 L 350.000 400.000 M 400.000 2650.000 L 8900.000 2650.000 " />
+            <g id="yAxisNumbersGroupNode" font-family="Times New Roman" font-size="80" text-anchor="end">
+             <text x="300.000" y="2650.000">0</text>
+             <text x="300.000" y="2400.000">10</text>
+             <text x="300.000" y="2150.000">20</text>
+             <text x="300.000" y="1900.000">30</text>
+             <text x="300.000" y="1650.000">40</text>
+             <text x="300.000" y="1400.000">50</text>
+             <text x="300.000" y="1150.000">60</text>
+             <text x="300.000" y="900.000">70</text>
+             <text x="300.000" y="650.000">80</text>
+             <text x="300.000" y="400.000">90</text>
+            </g>
+            <g fill="#000080" font-family="Arial" font-weight="bold" font-size="120" text-anchor="middle">
+             <text id="titleTextNode" x="4500.00" y="150.00" text-decoration="underline">GPU Usage</text>
+            </g>
+            <g fill="#000080" font-family="Arial" font-weight="bold" font-size="100" text-anchor="middle">
+             <text id="xAxisLabelTextNode" x="4500.00" y="2900.00" text-decoration="underline">Time(sec)</text>
+            </g>
+            <g fill="#000080" font-family="Arial" font-weight="bold" font-size="100" text-anchor="middle">
+             <text id="yAxisLabelTextNode" x="150.00" y="1500.00" text-decoration="underline" transform="rotate(-90,150.00,1500.00)">GPU [%]</text>
+            </g>
+           </svg>
+          </div>
+         </div>
+        </div>
+        <div class="membusy">
+         <div class="stats">
+          <div class="stat">
+           <table>
+           <tr> <td>&nbsp;</td></tr>
+           <tr>
+            <td>
+             <b>RAM usage:</b><br/>
+             <b>Average:</b> 3.4 GB<br/>
+             <b>Min:</b> 3.2 GB<br/>
+             <b>Max:</b> 3.5 GB<br/>
+            </td>
+           </tr>
+           <tr> <td>&nbsp;</td></tr>
+           </table>
+          </div>
+         </div>
+         <div class="graphs">
+          <div class="graph">
+           <svg viewBox="0 0 9000 3000" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+             <linearGradient id="GradientColor" x1="0.0" y1="1.0" x2="0.0" y2="0.0">
+              <stop offset="0.2" stop-color="#92e410" stop-opacity="0.9" />
+              <stop offset="0.6" stop-color="#cf3b3b" stop-opacity="0.9" />
+             </linearGradient> 
+            </defs>
+            <g stroke="black" stroke-width="0" fill="#FFFFFF" shape-rendering="crispEdges" opacity="0">
+             <rect class="graphWhiteRectangleNode" x="0" y="0" width="9000" height="3000" />
+            </g>
+            <g id="traceFillGroupNode" stroke="#CF3B3B" fill="url(#GradientColor)" stroke-width="0">
+             <path d=" M 400.000 366.764 554.545 367.927 709.091 365.906 863.636 361.497 1018.182 353.250 1172.727 343.084 1327.273 337.695 1481.818 323.111 1636.364 320.488 1790.909 315.322 1945.455 313.540 2100.000 311.452 2254.545 311.205 2409.091 315.274 2563.636 309.904 2718.182 289.199 2872.727 274.384 3027.273 266.701 3181.818 271.048 3336.364 267.787 3490.909 271.250 3645.455 270.940 3800.000 271.817 3954.545 262.972 4109.091 261.571 4263.637 262.055 4418.182 273.311 4572.728 292.957 4727.273 306.089 4881.818 315.097 5036.364 318.377 5190.909 310.250 5345.455 309.702 5500.000 308.884 5654.545 302.731 5809.091 296.161 5963.636 290.214 6118.182 278.413 6272.728 272.048 6427.273 261.575 6581.818 249.860 6736.364 238.981 6890.909 227.450 7045.455 225.337 7200.000 224.561 7354.545 220.893 7509.091 215.720 7663.636 211.404 7818.182 207.144 7972.728 200.000 8127.273 201.198 8281.818 206.367 8436.363 224.001 8590.909 252.201 8745.455 281.807 8900.000 288.095 8900.000 2650.000 400.000 2650.000 z " fill="url(#GradientColor)" />
+            </g>
+            <g id="traceGroupNode" stroke="000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" fill="url(#GradientColor)">
+             <path d=" M 400.000 366.764 554.545 367.927 709.091 365.906 863.636 361.497 1018.182 353.250 1172.727 343.084 1327.273 337.695 1481.818 323.111 1636.364 320.488 1790.909 315.322 1945.455 313.540 2100.000 311.452 2254.545 311.205 2409.091 315.274 2563.636 309.904 2718.182 289.199 2872.727 274.384 3027.273 266.701 3181.818 271.048 3336.364 267.787 3490.909 271.250 3645.455 270.940 3800.000 271.817 3954.545 262.972 4109.091 261.571 4263.637 262.055 4418.182 273.311 4572.728 292.957 4727.273 306.089 4881.818 315.097 5036.364 318.377 5190.909 310.250 5345.455 309.702 5500.000 308.884 5654.545 302.731 5809.091 296.161 5963.636 290.214 6118.182 278.413 6272.728 272.048 6427.273 261.575 6581.818 249.860 6736.364 238.981 6890.909 227.450 7045.455 225.337 7200.000 224.561 7354.545 220.893 7509.091 215.720 7663.636 211.404 7818.182 207.144 7972.728 200.000 8127.273 201.198 8281.818 206.367 8436.363 224.001 8590.909 252.201 8745.455 281.807 8900.000 288.095 8900.000 2650.000 400.000 2650.000 z " stroke="#cf3b3b" stroke-width="0.01" />
+            </g>
+            <path id="xGridLinesPathNode" fill="none" stroke="#C0C0FF" stroke-width="5" d=" M 400.000 200.000 L 400.000 2650.000 M 3490.909 200.000 L 3490.909 2650.000 M 6581.818 200.000 L 6581.818 2650.000 " />
+            <path id="xAxisPinsPathNode" fill="none" stroke="#000000" stroke-width="7" d=" M 400.000 2650.000 L 400.000 2700.000 M 3490.909 2650.000 L 3490.909 2700.000 M 6581.818 2650.000 L 6581.818 2700.000 M 400.000 200.000 L 400.000 2650.000 M 8900.000 200.000 L 8900.000 2650.000 " />
+            <g id="xAxisNumbersGroupNode" font-family="Times New Roman" font-size="80" text-anchor="middle">
+             <text x="400.000" y="2780.000">0</text>
+             <text x="3490.909" y="2780.000">20</text>
+             <text x="6581.818" y="2780.000">40</text>
+            </g>
+            <path id="yGridLinesPathNode" fill="none" stroke="#C0C0FF" stroke-width="5" d=" M 400.000 2650.000 L 8900.000 2650.000 M 400.000 1945.442 L 8900.000 1945.442 M 400.000 1240.885 L 8900.000 1240.885 M 400.000 536.327 L 8900.000 536.327 " />
+            <path id="yAxisPinsPathNode" fill="none" stroke="#000000" stroke-width="7" d=" M 400.000 2650.000 L 350.000 2650.000 M 400.000 1945.442 L 350.000 1945.442 M 400.000 1240.885 L 350.000 1240.885 M 400.000 536.327 L 350.000 536.327 M 400.000 2650.000 L 8900.000 2650.000 " />
+            <g id="yAxisNumbersGroupNode" font-family="Times New Roman" font-size="80" text-anchor="end">
+             <text x="300.000" y="2650.000">0</text>
+             <text x="300.000" y="1945.442">1</text>
+             <text x="300.000" y="1240.885">2</text>
+             <text x="300.000" y="536.327">3</text>
+            </g>
+            <g fill="#000080" font-family="Arial" font-weight="bold" font-size="120" text-anchor="middle">
+             <text id="titleTextNode" x="4500.00" y="150.00" text-decoration="underline">RAM Usage</text>
+            </g>
+            <g fill="#000080" font-family="Arial" font-weight="bold" font-size="100" text-anchor="middle">
+             <text id="xAxisLabelTextNode" x="4500.00" y="2900.00" text-decoration="underline">Time(sec)</text>
+            </g>
+            <g fill="#000080" font-family="Arial" font-weight="bold" font-size="100" text-anchor="middle">
+             <text id="yAxisLabelTextNode" x="150.00" y="1500.00" text-decoration="underline" transform="rotate(-90,150.00,1500.00)">RAM [GB]</text>
+            </g>
+           </svg>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="main_cell2">
+       <div id="specs">
+        <div class="yellow yellow2">&nbsp;</div>
+        <div class="spec">
+         <h2 ><b>PC Specs (CPU, GPU, RAM, OS)</b></h2><br/>
+         <b>Operating System Name: </b> <em>Windows10 x64, Service pack 0</em><br/>
+         <b>Processor: </b> <em>Intel(R) Core(TM) i7-4770K CPU @ 3.50GHz</em><br/>
+         <b>Processor Cores: </b> <em>4</em><br/>
+         <b>Processor Threads: </b> <em>8</em><br/>
+         <b>Physical Memory Total[GB]: </b> <em>16</em><br/>
+         <b>GPU Count: </b> <em>1</em><br/>
+         <b>GPU 1 Name: </b> <em>NVIDIA GeForce GTX 1070</em><br/>
+         <b>GPU 1 Driver: </b> <em>378.66</em><br/>
+         <b>Code Changelist: </b> <em>2168361</em><br/>
+        </div>
+        <div class="spec">
+         <h2><b>Graphics settings used:</b></h2><br/>
+         <b>Resolution: </b><em>1920 x 1080</em><br/>
+         <b>Resolution Scaling: </b><em>1.00</em><br/>
+         <b>Window Mode: </b><em>FullScreen</em><br/>
+         <b>Refresh Rate: </b><em>60</em><br/>
+         <b>VSYNC: </b> <em>Off</em><br/>
+         <b>Framerate Limit: </b><em>Off</em><br/>
+         <b>Graphics Preset: </b><em>Custom</em><br/>
+         <b>Antialiasing Mode: </b><em>TEMPORAL AA</em><br/>
+         <b>Ambient Occlusion: </b><em>SSBC</em><br/>
+         <b>Draw Distance: </b><em>Very High</em><br/>
+         <b>Level of Detail: </b><em>Very High</em><br/>
+         <b>Texture Quality: </b><em>High</em><br/>
+         <b>Anisotropic Filtering: </b><em>4</em><br/>
+         <b>Shadow Quality: </b><em>High</em><br/>
+         <b>Terrain Quality: </b><em>Very High</em><br/>
+         <b>Vegetation Quality: </b><em>Very High</em><br/>
+         <b>Turf Effects: </b><em>On</em><br/>
+         <b>Motion Blur: </b> <em>Off</em><br/>
+         <b>Iron Sights DOF: </b> <em>On</em><br/>
+         <b>High Quality DOF: </b> <em>Off</em><br/>
+         <b>Bloom: </b> <em>On</em><br/>
+         <b>Godrays: </b> <em>On</em><br/>
+         <b>Sub Surface Scattering: </b><em>Off</em><br/>
+         <b>Lens Flare: </b> <em>On</em><br/>
+         <b>Long Range Shadows: </b> <em>On</em><br/>
+        </div>
+       </div>
+      </div>
+     </div>
+     </div>
+    </div>
+   <footer>
+   </footer>
+  </div>
+ </body>
+</html>
