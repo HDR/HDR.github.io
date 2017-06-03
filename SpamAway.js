@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         SpamAway For McMyAdmin
-// @namespace    http://tampermonkey.net/
+// @namespace    MrHDR.github.io
 // @version      0.1
 // @description  Removes console spam from McMyAdmin Console.
 // @author       HDR
