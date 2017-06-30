@@ -1,8 +1,4 @@
 <?php
-	/**
-	 * Please be aware. This gist requires at least PHP 5.4 to run correctly.
-	 * Otherwise consider downgrading the $opts array code to the classic "array" syntax.
-	 */
 	function getSong($streamingUrl, $interval, $offset = 0, $headers = true)
 	{
 		$needle = 'StreamTitle=';
