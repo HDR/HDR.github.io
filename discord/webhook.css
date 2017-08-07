@@ -1,0 +1,29 @@
+body {
+    background-color: #504F4E;
+}
+
+input {
+    text-align: center;
+}
+
+h3 {
+    color: white;
+}
+
+strong {
+	color: #d85555;
+}
+
+.whitetext {
+	color: white;
+}
+
+.btn-primary{
+	color:#fff;
+	background-color:#7289da;
+	padding:8px 16px;
+	border: 1px outset #7289da;
+}
+.btn-primary:hover{
+	background-color:#697ec4
+}
