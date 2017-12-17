@@ -1,33 +1,4 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A layout example with a side menu that hides on mobile, just like the Pure website.">
-    <title>Simple Pi-Fi</title>
-    
-    <link rel="stylesheet" href="pure-min.css">
-            <link rel="stylesheet" href="css/layouts/side-menu.css">
-</head>
-<body>
-
-
-
-
-
-
-<div id="layout">
-    <div id="main">
-        <div class="header">
-            <h1>Simple Pi-Fi</h1>
-            <h2>A wpa_supplicant generator for Raspbian Stretch.</h2>
-			<h3></h3>
-        </div>
-
-        <div class="content">
-            <h2 class="content-subhead">Wi-Fi Details</h2>
-            <p>
-                <form id="formid" onsubmit="outputText()" class="pure-form pure-form-stacked">
+<form class="pure-form pure-form-stacked">
     <fieldset>
         <label for="ssid">SSID</label>
         <input id="ssid" type="text" placeholder="SSID">
@@ -291,28 +262,3 @@
         <button type="submit" class="pure-button pure-button-primary">Generate</button>
     </fieldset>
 </form>
-            </p>
-        </div>
-    </div>
-</div>
-
-<script>
-var form = document.getElementById("formid"); function handleForm(event) { event.preventDefault(); } form.addEventListener('submit', handleForm);
-function outputText () {
-    var element = document.getElementById("output");
-    element.innerHTML = 'country=' +  document.getElementById("country").value + '<br>ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev <br>update_config=1 <br><br>network={ <br>   ssid="' + document.getElementById("ssid").value + '"<br>   psk="' + document.getElementById("psk").value +'" <br>}';
-};
-</script>
-
-<pre id="output"><code>country=
-ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
-update_config=1
-
-network={
-   ssid=""
-   psk=""
-}
-</code></pre>
-
-</body>
-</html>
