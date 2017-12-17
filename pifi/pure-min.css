@@ -17,9 +17,7 @@ pre {
     word-wrap: break-word;       /* Internet Explorer 5.5+ */
     background-color: #f8f8f8;
     border: 1px solid #dfdfdf;
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
-	position:absolute;
-	left:30%;
+	margin: 0 auto;
+	width: max-content;
     padding: 0.125rem 0.3125rem 0.0625rem;
 }
