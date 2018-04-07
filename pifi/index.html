@@ -12,11 +12,6 @@
 </head>
 <body>
 
-
-
-
-
-
 <div id="layout">
     <div id="main">
         <div class="header">
@@ -288,8 +283,39 @@
         	<option value="ZM">Zambia</option>
         	<option value="ZW">Zimbabwe</option>
     </select>
+	
+<script>
+function download(filename, text) {
+  var element = document.createElement('a');
+  element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+  element.setAttribute('download', filename);
 
-        <button type="submit" class="pure-button pure-button-primary">Generate</button>
+  element.style.display = 'none';
+  document.body.appendChild(element);
+
+  element.click();
+
+  document.body.removeChild(element);
+}
+</script>
+<script>
+function genDL() {
+  document.getElementById("genbutton").click()
+  var element = document.createElement('a');
+  element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(document.getElementById("dlcode").innerHTML));
+  element.setAttribute('download', "wpa_supplicant.conf");
+
+  element.style.display = 'none';
+  document.body.appendChild(element);
+
+  element.click();
+
+  document.body.removeChild(element);
+}
+</script>
+
+        <button id="genbutton" type="submit" class="pure-button pure-button-primary">Generate</button>
+		<input class="pure-button pure-button-primary" type="button" value="Download" onclick=genDL(); />
     </fieldset>
 </form>
             </p>
@@ -300,12 +326,12 @@
 <script>
 var form = document.getElementById("formid"); function handleForm(event) { event.preventDefault(); } form.addEventListener('submit', handleForm);
 function outputText () {
-    var element = document.getElementById("output");
-    element.innerHTML = 'country=' +  document.getElementById("country").value + '<br>ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev <br>update_config=1 <br><br>network={ <br>   ssid="' + document.getElementById("ssid").value + '"<br>   psk="' + document.getElementById("psk").value +'" <br>}';
+    var element = document.getElementById("dlcode");
+    element.innerHTML = 'country=' +  document.getElementById("country").value + '\nctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev \nupdate_config=1 \n\nnetwork={ \n   ssid="' + document.getElementById("ssid").value + '"\n   psk="' + document.getElementById("psk").value +'" \n}';
 };
 </script>
 
-<pre id="output"><code>country=
+<pre id="output"><code id="dlcode">country=
 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
 update_config=1
 
