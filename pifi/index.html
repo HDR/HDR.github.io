@@ -6,9 +6,29 @@
     <meta name="description" content="A wpa_supplicant.conf generator for Raspbian Stretch">
     <link rel="shortcut icon" type="image/png" href="favicon.png"/>
     <title>Simple Pi-Fi</title>
-    
     <link rel="stylesheet" href="pure-min.css">
             <link rel="stylesheet" href="css/layouts/side-menu.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#252e39",
+    },
+    "button": {
+      "background": "#14a7d0"
+    }
+  },
+  "showLink": false,
+  "position": "bottom",
+  "content": {
+    "message": "If you are unable to connect to the internet on the 3B+ try writing \"sudo rfkill unblock all\" &amp; \"sudo service networking restart\" with a keyboard plugged in.",
+    "dismiss": "Close"
+  }
+})});
+</script>
 </head>
 <body>
 
@@ -17,7 +37,6 @@
         <div class="header">
             <h1>Simple Pi-Fi</h1>
             <h2>A wpa_supplicant generator for Raspbian Stretch.</h2>
-			<h2>Unable to connect to the internet on the 3B+? try "sudo rfkill unblock all"</h2>
 		<h3><a href="https://github.com/MrHDR/MrHDR.github.io/tree/master/pifi">Source Code</a></h3>
         </div>
 
