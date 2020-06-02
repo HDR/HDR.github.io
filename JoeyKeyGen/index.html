@@ -37,7 +37,7 @@
                             let did1 = parseInt(hex1,16);
                             let did2 = parseInt(hex2,16);
                             let did3 = parseInt(hex3,16);
-                            let res = ((did1 ^ 0x4210005) >> 5 | (did1 ^ 0x4210005) << 0x1b) ^ ((did2 ^ 0x30041523) >> 3 | (did2 ^ 0x30041523) << 0x1d) ^ ((did3 ^ 0x6517bebe) >> 0xc | (did3 ^ 0x6517bebe) << 0x14);
+                            let res = ((did1 ^ 0x4210005) >>> 5 | (did1 ^ 0x4210005) << 0x1b) ^ ((did2 ^ 0x30041523) >>> 3 | (did2 ^ 0x30041523) << 0x1d) ^ ((did3 ^ 0x6517bebe) >>> 0xc | (did3 ^ 0x6517bebe) << 0x14);
                             for(let i = 0; i < 100; i++){
                                 res = res >>> 1 | (res ^ res >>> 0x1f ^ (res & 0x200000) >>> 0x15 ^ (res & 2) >>> 1 ^ res & 1) << 0x1f;
                             }
