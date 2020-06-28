@@ -41,8 +41,10 @@
                             for(let i = 0; i < 100; i++){
                                 res = res >>> 1 | (res ^ res >>> 0x1f ^ (res & 0x200000) >>> 0x15 ^ (res & 2) >>> 1 ^ res & 1) << 0x1f;
                             }
-                            let UpdateKey = res.toString(16);
-                            return UpdateKey;
+							if (res < 0) {
+								res = 0xFFFFFFFF + res + 1;
+							}
+                            return res.toString(16);
 
                         }
                     </script>
@@ -63,7 +65,5 @@
 </script>
 
 <pre id="output"><code id="updatekey">Update Key:</code></pre>
-<p></p>
-<pre>If the returned key is negative, please try https://github.com/HDR/JoeyKeygen/releases instead!</pre>
 </body>
 </html>
