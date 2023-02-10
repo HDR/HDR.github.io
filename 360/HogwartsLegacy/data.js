@@ -1,8 +1,8 @@
 var APP_DATA = {
   "scenes": [
     {
-      "id": "0-hogwarts-legacy-train",
-      "name": "Hogwarts Legacy Train",
+      "id": "0-train-tunnel",
+      "name": "Train Tunnel",
       "levels": [
         {
           "tileSize": 256,
@@ -24,16 +24,16 @@ var APP_DATA = {
       ],
       "faceSize": 2048,
       "initialViewParameters": {
-        "yaw": 0.074304292370595,
-        "pitch": 0.18650120617924948,
-        "fov": 1.4461899673881597
+        "yaw": 0.04767870367970062,
+        "pitch": 0.0753062016055317,
+        "fov": 1.463665799827691
       },
       "linkHotspots": [],
       "infoHotspots": []
     },
     {
-      "id": "1-hogwarts-legacy-tunnels",
-      "name": "Hogwarts Legacy Tunnels",
+      "id": "1-dark-tunnel",
+      "name": "Dark Tunnel",
       "levels": [
         {
           "tileSize": 256,
@@ -55,9 +55,102 @@ var APP_DATA = {
       ],
       "faceSize": 2048,
       "initialViewParameters": {
-        "yaw": 0.03823451037807679,
-        "pitch": 0.9673609786734367,
-        "fov": 1.4461899673881597
+        "yaw": 0.14531356225784897,
+        "pitch": 1.0608208550901281,
+        "fov": 1.463665799827691
+      },
+      "linkHotspots": [],
+      "infoHotspots": []
+    },
+    {
+      "id": "2-lounge",
+      "name": "Lounge",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 2048,
+      "initialViewParameters": {
+        "yaw": 1.7015281830034654,
+        "pitch": 0.00593722834365451,
+        "fov": 1.463665799827691
+      },
+      "linkHotspots": [],
+      "infoHotspots": []
+    },
+    {
+      "id": "3-hogwarts",
+      "name": "Hogwarts",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 2048,
+      "initialViewParameters": {
+        "yaw": 0,
+        "pitch": 0,
+        "fov": 1.463665799827691
+      },
+      "linkHotspots": [],
+      "infoHotspots": []
+    },
+    {
+      "id": "4-hogsmeade",
+      "name": "Hogsmeade",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 2048,
+      "initialViewParameters": {
+        "yaw": 0,
+        "pitch": 0,
+        "fov": 1.463665799827691
       },
       "linkHotspots": [],
       "infoHotspots": []
